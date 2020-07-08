@@ -10,7 +10,8 @@ public class EndThread {
         public void run() {
             String threadName = Thread.currentThread().getName();
             System.out.println(threadName + "interrrupt flag" + isInterrupted());
-            while (!isInterrupted()) {
+            while(!Thread.interrupted()){
+            //while (!isInterrupted()) {
                 System.out.println(threadName+" is running");
                 System.out.println(threadName+"inner interrrupt flag ="
                         +isInterrupted());
