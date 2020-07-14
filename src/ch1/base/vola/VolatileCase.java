@@ -29,4 +29,5 @@ public class VolatileCase {
         SleepTools.second(5);
         System.out.println("main is ended!");
     }
+
 }
